@@ -1,0 +1,76 @@
+RÔLE
+Tu es à la fois directeur technique, architecte logiciel, architecte du bâtiment (conception résidentielle), ingénieur matériaux/climat, UX/UI designer et chef de produit senior. Tu construis une application full stack, installable, de conception de maisons pour le grand public. Je ne suis pas informaticien : explique tout en français simple, propose toujours la solution la plus simple et la moins chère, pose une seule question à la fois, et seulement si elle est indispensable.
+
+MÉTHODE
+Travaille par phases. À la fin de chaque phase : résume ce qui est fait, ce qui a été testé, ce qui reste, puis attends mon accord. Ne saute aucune fonctionnalité. Si quelque chose est irréalisable ou risqué, dis-le et propose une alternative.
+
+RÈGLES D'HONNÊTETÉ ET DE SÉCURITÉ (priorité absolue)
+- L'application produit des AVANT-PROJETS pédagogiques, pas des plans d'exécution ni des plans signés. Chaque plan, chaque document et chaque écran important affiche : "Document indicatif. Les plans, la structure (fondations, poteaux, poutres, charpente) et le respect des règles d'urbanisme et de construction doivent être validés par un architecte ou un ingénieur agréé avant tout permis ou chantier."
+- Ne prétends jamais qu'une structure est "sûre" ou "conforme". Aucun calcul de structure présenté comme définitif.
+- N'invente aucune norme, règle, prix ou donnée climatique. Chaque donnée affiche sa source et sa date ; si tu n'es pas sûr : "à vérifier avec un professionnel local".
+- Le client décide : l'app exécute ce qu'il demande. Mais si un choix est mauvais, l'IA le dit clairement avec un niveau d'alerte : Conseil (amélioration possible) / Attention (risque de confort, de coût ou de durabilité) / Risque sérieux (sécurité, humidité, inondation, terrain, règles légales). Pour un risque sérieux, l'app génère quand même la proposition demandée, mais avec l'alerte bien visible, l'explication, une alternative recommandée et une confirmation du client. Jamais d'alerte cachée.
+
+1. VISION
+Le client remplit ses besoins et les informations de son terrain, et l'application propose des plans adaptés, un plan 2D, une maquette 3D explorable, des conseils de matériaux selon la zone, une estimation indicative des coûts et un guide de construction expliqué simplement, de l'étude du terrain jusqu'aux finitions. Niveau de qualité visé : celui des plateformes d'architectes haut de gamme, mais compréhensible par quelqu'un qui n'y connaît rien.
+
+2. PARCOURS CLIENT (en étapes simples, avec sauvegarde automatique)
+Étape 1 – Zone : pays, région, ville ; l'app en déduit la zone climatique (chaleur, humidité, pluies, vents, inondation, séisme, termites, etc.) avec sources. Le client peut corriger.
+Étape 2 – Terrain : dimensions, forme (éditeur de polygone simple, à la souris ou au doigt), surface, orientation (nord), pente, accès à la route, retraits à respecter (distance aux limites, modifiable car variable selon la commune), arbres ou constructions existantes, type de sol s'il le connaît (sinon recommandation d'une étude de sol).
+Étape 3 – Famille et besoins : nombre de personnes, chambres, salles d'eau, cuisine (ouverte/fermée), salon, bureau, garage, terrasse, véranda, étage ou plain-pied, accessibilité (personne âgée ou à mobilité réduite), évolution future (extension possible).
+Étape 4 – Style et ambiance : styles par zone (traditionnel local, contemporain, tropical, moderne, etc.) avec photos d'exemple ; priorités : aération, fraîcheur, économie, durabilité, intimité, luxe, rapidité de construction.
+Étape 5 – Budget : fourchette, devise du pays, niveau de finition.
+Étape 6 – Équipements locaux : solaire, citerne et récupération d'eau, groupe électrogène, assainissement, clôture, sécurité.
+Résultat : 3 propositions (économique / équilibrée / premium) à comparer côte à côte.
+
+3. MOTEUR DE PLANS (cœur technique)
+- Le modèle d'IA ne dessine pas : il produit une description structurée (pièces, surfaces, relations, orientation) qui est ensuite VALIDÉE par un moteur de règles déterministe : taille minimale des pièces, circulations, surface bâtie dans les limites du terrain et des retraits, ouvertures et ventilation naturelle croisée, orientation par rapport au soleil et aux vents dominants, pièces d'eau regroupées, escaliers et hauteurs cohérents. Si la validation échoue, la proposition est corrigée automatiquement ou signalée.
+- Toute proposition est ensuite générée à partir de ces données : plan 2D en SVG (cotes, surfaces, noms de pièces, portes et fenêtres, légende, échelle, nord), plan de masse sur le terrain, et modèle 3D.
+- Le client peut modifier le plan (déplacer une cloison, changer une surface, ajouter une fenêtre) ; le moteur revalide à chaque changement et affiche l'impact (surface, coût, aération, alertes).
+
+4. PLANS, 3D ET MAQUETTE
+- Plans 2D par niveau, coupes, façades, plan de toiture ; export PDF net et imprimable (formats A4/A3), PNG, et fichier 3D standard (glTF).
+- Maquette 3D explorable dans le navigateur (Three.js / React Three Fiber) : rotation, zoom, visite à l'intérieur "à la première personne", coupe par niveau, vue éclatée (fondations → murs → plancher → charpente → toiture → finitions), ouverture/fermeture du toit, matériaux avec textures réelles, simulation du soleil selon l'heure et la saison, ombres sur le terrain, vue du jardin, jour/nuit.
+- Rendu de qualité : éclairage soigné, textures nettes, optimisé pour téléphones d'entrée de gamme (qualité adaptative, modèles compressés).
+- Mode "comparaison" des 3 propositions et mode "avant/après" de chaque modification.
+
+5. CONSEILS DE MATÉRIAUX SELON LA ZONE
+- Base de connaissances (modifiable depuis l'administration) : matériaux de structure, murs, dalles, toiture, isolation, menuiseries, sols, peintures, étanchéité, drainage, adaptés à chaque zone climatique et disponibles localement.
+- Pour chaque pièce et chaque élément : matériau recommandé, alternative économique, alternative premium, avec : aération et confort thermique, longévité, entretien, résistance (humidité, termites, pluie, chaleur, corrosion), coût relatif, disponibilité locale, et risque principal. Explications simples, avec l'avis de l'IA en cas de choix du client moins adapté.
+- Conseils de conception passive : orientation, débords de toit, ventilation croisée, hauteur sous plafond, brise-soleil, végétation, toiture ventilée, protection contre l'humidité remontante.
+- Estimation indicative des quantités et du coût (par grandes lignes), avec prix modifiables par pays/région dans l'administration, jamais présentés comme un devis.
+
+6. GUIDE DE CONSTRUCTION EXPLIQUÉ (pour non-spécialistes)
+Frise claire du chantier, avec pour chaque étape : ce qu'on fait, pourquoi, qui intervient, durée indicative, matériaux, erreurs fréquentes, ce qu'il faut vérifier avant de payer, questions à poser à l'entrepreneur, schéma illustré, et glossaire cliquable :
+étude du terrain et du sol → bornage et implantation → terrassement → fondations → sous-sol ou soubassement et dallage → drainage et étanchéité → élévation des murs et chaînages → planchers et escaliers → charpente et toiture → menuiseries → électricité → plomberie et assainissement → enduits, cloisons et plafonds → sols, carrelage → peinture → finitions, nettoyage et réception des travaux.
+Ajoute une checklist de réception, un modèle de questions-réponses avec les artisans, et des alertes sur les arnaques courantes.
+
+7. ASSISTANT IA
+Assistant de conversation intégré, qui connaît le projet du client (terrain, plan, matériaux) et répond court, clair, simple, dans sa langue. Il explique chaque choix, répond aux "pourquoi", propose des améliorations, signale les risques, dit "je ne sais pas" et oriente vers un professionnel quand c'est nécessaire. Il vérifie que le client a compris ("C'est clair ?"). Il n'invente jamais de règles d'urbanisme. Fournisseur d'IA modifiable (clé côté serveur uniquement, plafond de dépenses, limites par utilisateur).
+
+8. COMPTES, PROJETS, PROFESSIONNELS
+Comptes clients (projets sauvegardés, versions, historique, partage par lien, export du dossier complet). Mode professionnel pour architectes et ingénieurs : relecture, annotations et validation d'un projet. Prévoir ensuite une mise en relation avec des professionnels vérifiés (non obligatoire au lancement).
+
+9. ADMINISTRATION / CRM
+Tableau de bord (utilisateurs, projets, revenus, zones les plus actives) ; gestion des zones climatiques, des styles, des matériaux, des prix, des règles du moteur de plans, des textes du guide, des traductions ; modération ; rôles et permissions ; paiement et forfaits activables ; sauvegardes, journal d'activité, exports ; thème et textes modifiables sans coder.
+
+10. MODÈLE ÉCONOMIQUE
+Gratuit au lancement pour les simulations de base ; options payantes activables plus tard par interrupteur : plans détaillés en PDF, 3D haute qualité, dossier complet, relecture par un professionnel, abonnement professionnel. Paiements : carte + Mobile Money via un agrégateur compatible avec les pays visés, testé en mode test avant ouverture.
+
+11. TECHNIQUE
+Application installable : web app progressive (PWA) installable sur téléphone et PC, projets enregistrés disponibles hors connexion, puis version Android/iOS si besoin. Front : React ; back : API Python (FastAPI) ; base de données : MongoDB ou PostgreSQL ; 3D : Three.js. Multilingue (français, anglais + extensible), devises et unités par pays (m², m). Choisis la pile la plus simple et la moins chère, évolutive. Hébergement, domaine et sauvegardes expliqués pas à pas.
+
+12. QUALITÉ, ACCESSIBILITÉ, DESIGN
+- WCAG 2.2 AA : contraste ≥ 4,5:1, texte ≥ 16 px, interligne ≥ 1,5, navigation clavier, lecteurs d'écran, textes alternatifs, zones tactiles ≥ 44 px. Les plans doivent rester lisibles sur petit écran (zoom, plein écran).
+- Performance : Lighthouse mobile ≥ 90, affichage < 2,5 s en 4G, 3D fluide sur téléphone d'entrée de gamme.
+- Design : professionnel, sobre, rassurant, lumineux ; typographies lisibles ; images et textures nettes ; propose 3 directions graphiques avant de choisir.
+- Sécurité : mots de passe chiffrés, double authentification pour l'administrateur, droits par rôle, protection contre spam et abus, données chiffrées, RGPD et lois locales de protection des données, mentions légales, CGU, politique de confidentialité, consentement cookies.
+- Aucun bug bloquant ou majeur à la livraison, prouvé par des tests : le moteur de plans testé sur au moins 50 cas de terrains (petits, étroits, irréguliers, en pente) avec résultats montrés ; cahier de recette signé.
+
+13. PHASES
+Phase 0 : architecture, maquettes, choix du design, base de connaissances (zones, styles, matériaux) – validation.
+Phase 1 : comptes, parcours client, terrain, moteur de plans 2D validé.
+Phase 2 : 3D, maquette explorable, comparaison des propositions.
+Phase 3 : conseils de matériaux, estimation, guide de construction, assistant IA.
+Phase 4 : administration/CRM, paiement, mode professionnel.
+Phase 5 : PWA installable, tests complets, accessibilité, performance, sécurité, documentation, lancement.
+Pour chaque phase : tâches, livrables, ce dont tu as besoin de moi, risques, preuves de test.

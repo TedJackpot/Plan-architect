@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import {DEFAULT,generate,validate,polygonErrors,rectFits,area} from '../lib/engine.ts';
+import type {Brief,Point} from '../lib/engine.ts';
+import {writeFileSync} from 'node:fs';
+const fixtures:{name:string;brief:Brief;expected:'valid'|'invalid'|'either'}[]=[];
+for(let i=0;i<10;i++)fixtures.push({name:`rectangle-${i+1}`,brief:{...DEFAULT,width:24+i,depth:30+i,soil:'rapport à obtenir',slope:'Plutôt plat'},expected:'valid'});
+for(let i=0;i<10;i++)fixtures.push({name:`etroit-${i+1}`,brief:{...DEFAULT,width:5+i*.2,depth:35+i},expected:'invalid'});
+for(let i=0;i<10;i++)fixtures.push({name:`irregulier-${i+1}`,brief:{...DEFAULT,polygon:[{x:0,y:0},{x:36+i,y:0},{x:36+i,y:16},{x:28+i,y:16},{x:28+i,y:38},{x:0,y:38}]},expected:'valid'});
+for(let i=0;i<10;i++)fixtures.push({name:`pente-${i+1}`,brief:{...DEFAULT,width:24+i,depth:32,slope:i%2?'En pente':'Forte pente'},expected:'valid'});
+const invalid:Point[][]=[[],[{x:0,y:0},{x:10,y:10},{x:0,y:10},{x:10,y:0}],[{x:0,y:0},{x:0,y:0},{x:1,y:0}],[{x:0,y:0},{x:NaN,y:1},{x:1,y:0}],[{x:0,y:0},{x:1,y:1},{x:2,y:2}]];
+for(let i=0;i<10;i++)fixtures.push({name:`invalide-ou-insoluble-${i+1}`,brief:i<5?{...DEFAULT,width:0,depth:0,polygon:invalid[i]}:{...DEFAULT,setback:50+i},expected:'invalid'});
+const report:any[]=[];for(const f of fixtures){const start=performance.now(),p=generate(f.brief,1);if(f.expected==='valid')assert.equal(p.valid,true,f.name+': '+p.errors.join(';'));if(f.expected==='invalid')assert.equal(p.valid,false,f.name);if(p.valid){assert.equal(validate(p,f.brief).length,0);assert.ok(p.rooms.every(r=>Number.isFinite(r.w*r.h)&&r.w*r.h>0));assert.ok(rectFits(p.x,p.y,p.width,p.depth,p.terrain,f.brief.setback));for(let l=0;l<p.levels;l++){const sum=p.rooms.filter(r=>r.level===l).reduce((a,r)=>a+r.w*r.h,0);assert.ok(Math.abs(sum-p.width*p.depth)<1e-6,'aires cohérentes');}const changed={...p,rooms:p.rooms.map((r,i)=>i?{...r}:{...r,x:p.x-2})};assert.ok(validate(changed,f.brief).length>0,'déplacement hors enveloppe détecté');const overlap={...p,rooms:p.rooms.map((r,i)=>i===1?{...r,x:p.rooms[0].x,y:p.rooms[0].y}:{...r})};assert.ok(validate(overlap,f.brief).some(e=>e.includes('chevauche')),'chevauchement détecté');}if(f.name.startsWith('pente'))assert.ok(p.alerts.some(a=>a.level==='Risque sérieux'));report.push({name:f.name,expected:f.expected,observed:p.valid?'valid':'invalid',passed:true,area:p.area,rooms:p.rooms.length,errors:p.errors,milliseconds:+(performance.now()-start).toFixed(3)});}
+assert.ok(polygonErrors([{x:0,y:0},{x:5,y:5},{x:0,y:5},{x:5,y:0}]).length);assert.equal(area([{x:0,y:0},{x:3,y:0},{x:3,y:4},{x:0,y:4}]),12);
+const square=[{x:0,y:0},{x:20,y:0},{x:20,y:20},{x:0,y:20}];assert.equal(rectFits(1,1,2,2,square,2),false);assert.equal(rectFits(2,2,2,2,square,2),true);
+for(const variant of[0,1,2])assert.equal(generate(DEFAULT,variant).valid,true);
+writeFileSync('docs/RESULTATS-50-TERRAINS.json',JSON.stringify({date:new Date().toISOString(),engine:'1.0.0',count:report.length,passed:report.length,scope:'Contrôles géométriques uniquement, aucune conformité structurelle/réglementaire',results:report},null,2));console.log(`${report.length} terrains vérifiés + invariants, retraits, chevauchements et erreurs.`);

@@ -1,0 +1,110 @@
+{
+  "date": "2026-10-27T22:37:54.588Z",
+  "scope": "Worker et D1 locaux isolés, sans connexion de production ni fournisseur externe",
+  "results": [
+    {
+      "name": "accès anonyme refusé",
+      "passed": true
+    },
+    {
+      "name": "premier propriétaire privé",
+      "passed": true
+    },
+    {
+      "name": "nouveau client sans privilège",
+      "passed": true
+    },
+    {
+      "name": "création de projet",
+      "passed": true
+    },
+    {
+      "name": "isolation des comptes en lecture",
+      "passed": true
+    },
+    {
+      "name": "isolation des comptes en écriture",
+      "passed": true
+    },
+    {
+      "name": "version suivante",
+      "passed": true
+    },
+    {
+      "name": "conflit de version",
+      "passed": true
+    },
+    {
+      "name": "historique conservé",
+      "passed": true
+    },
+    {
+      "name": "sauvegardes concurrentes",
+      "passed": true
+    },
+    {
+      "name": "une seule version concurrente",
+      "passed": true
+    },
+    {
+      "name": "administration protégée",
+      "passed": true
+    },
+    {
+      "name": "IA absente signalée",
+      "passed": true
+    },
+    {
+      "name": "partage avec expiration",
+      "passed": true
+    },
+    {
+      "name": "lecture instantané partagé",
+      "passed": true
+    },
+    {
+      "name": "révocation du lien",
+      "passed": true
+    },
+    {
+      "name": "validation des entrées",
+      "passed": true
+    },
+    {
+      "name": "attribution professionnelle",
+      "passed": true
+    },
+    {
+      "name": "autorisation de relecture",
+      "passed": true
+    },
+    {
+      "name": "projet confié accessible",
+      "passed": true
+    },
+    {
+      "name": "relecteur sans droit de modification",
+      "passed": true
+    },
+    {
+      "name": "annotation versionnée",
+      "passed": true
+    },
+    {
+      "name": "sauvegarde dossiers et versions",
+      "passed": true
+    },
+    {
+      "name": "restauration en copies",
+      "passed": true
+    },
+    {
+      "name": "archivage",
+      "passed": true
+    },
+    {
+      "name": "projet archivé masqué",
+      "passed": true
+    }
+  ]
+}

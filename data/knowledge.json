@@ -1,0 +1,1531 @@
+{
+  "schemaVersion": 1,
+  "title": "MON ARCHITECT — Repères pour comprendre son chantier",
+  "language": "fr",
+  "updatedAt": "2026-10-27",
+  "disclaimer": "Document indicatif. Les plans, la structure (fondations, poteaux, poutres, charpente) et le respect des règles d'urbanisme et de construction doivent être validés par un architecte ou un ingénieur agréé avant tout permis ou chantier.",
+  "editorialPolicy": "Repères pédagogiques et questions rédigés pour aider le client à dialoguer avec les professionnels. Les sources ne valent pas prescription du projet. Les procédures légales françaises ne sont pas transposées aux autres pays. Les données inconnues restent nulles.",
+  "sources": [
+    {
+      "id": "terrain",
+      "title": "Service Public — Terrain à bâtir hors lotissement",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F33818",
+      "scope": "France",
+      "publishedAt": null,
+      "consultedAt": "2026-10-27",
+      "status": "source_primaire_consultee",
+      "localValidationRequired": true
+    },
+    {
+      "id": "bornage",
+      "title": "Service Public — Bornage de terrains",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F3037",
+      "scope": "France",
+      "publishedAt": "2025-09-12",
+      "consultedAt": "2026-10-27",
+      "status": "source_primaire_consultee",
+      "localValidationRequired": true
+    },
+    {
+      "id": "reseaux",
+      "title": "OPPBTP — Travaux à proximité des réseaux",
+      "url": "https://www.preventionbtp.fr/ressources/documentation/ouvrage/reglementation-des-travaux-a-proximite-des-reseaux-fiches-pratiques-pour-les-moa_54f25qN2jK4BQL5hya6Qqn",
+      "scope": "France",
+      "publishedAt": "2026",
+      "consultedAt": "2026-10-27",
+      "status": "source_primaire_consultee",
+      "localValidationRequired": true
+    },
+    {
+      "id": "fouilles",
+      "title": "OPPBTP — Risques d’ensevelissement",
+      "url": "https://www.preventionbtp.fr/ressources/risques/ensevelissement-un-risque-a-considerer-lors-des-travaux-en-tranchees-et-de-terrassement_s6bfQttTnF4YVqmSKJDjdT",
+      "scope": "Prévention générale ; application locale à vérifier",
+      "publishedAt": "2026-06-26",
+      "consultedAt": "2026-10-27",
+      "status": "source_primaire_consultee",
+      "localValidationRequired": true
+    },
+    {
+      "id": "fondations",
+      "title": "AQC — Mouvements de fondations, tassements courants",
+      "url": "https://qualiteconstruction.com/ressource/fiches-pathologie-batiment/mouvements-fondations-maisons-individuelles-partie-1-tassements-courants/",
+      "scope": "Retour d’expérience technique français",
+      "publishedAt": "2026-09",
+      "consultedAt": "2026-10-27",
+      "status": "source_primaire_consultee",
+      "localValidationRequired": true
+    },
+    {
+      "id": "sols_sensibles",
+      "title": "AQC — Mouvements exceptionnels en sols sensibles",
+      "url": "https://qualiteconstruction.com/ressource/fiches-pathologie-batiment/mouvements-fondations-maisons-individuelles-partie-2-tassements-mouvements-exceptionnels-sols-sensibles/",
+      "scope": "Retour d’expérience technique français",
+      "publishedAt": "2026-09",
+      "consultedAt": "2026-10-27",
+      "status": "source_primaire_consultee",
+      "localValidationRequired": true
+    },
+    {
+      "id": "humidite",
+      "title": "AQC — Humidité en sous-sol",
+      "url": "https://qualiteconstruction.com/ressource/fiches-pathologie-batiment/humidite-sous-sol-batiments/",
+      "scope": "Retour d’expérience technique français et ultramarin",
+      "publishedAt": "2026-09",
+      "consultedAt": "2026-10-27",
+      "status": "source_primaire_consultee",
+      "localValidationRequired": true
+    },
+    {
+      "id": "toiture",
+      "title": "AQC — Condensation des couvertures métalliques",
+      "url": "https://qualiteconstruction.com/ressource/fiches-pathologie-batiment/condensation-sous-face-couvertures-metalliques/",
+      "scope": "Retour d’expérience technique français",
+      "publishedAt": "2026-09",
+      "consultedAt": "2026-10-27",
+      "status": "source_primaire_consultee",
+      "localValidationRequired": true
+    },
+    {
+      "id": "bois",
+      "title": "AQC — Eau, humidité et ossatures bois",
+      "url": "https://qualiteconstruction.com/ressource/fiches-pathologie-batiment/degradation-eau-humidite-enveloppes-ossatures-bois/",
+      "scope": "Retour d’expérience technique français",
+      "publishedAt": "2026-09",
+      "consultedAt": "2026-10-27",
+      "status": "source_primaire_consultee",
+      "localValidationRequired": true
+    },
+    {
+      "id": "revêtements",
+      "title": "AQC — Revêtements et menuiseries, points de vigilance",
+      "url": "https://qualiteconstruction.com/wp-content/uploads/2025/01/Plaquette-05-Avant-Renover-Revetements-Menuiseries-AQC.pdf",
+      "scope": "Guide de rénovation français ; observations transposables à faire vérifier",
+      "publishedAt": "2025-01",
+      "consultedAt": "2026-10-27",
+      "status": "source_primaire_consultee",
+      "localValidationRequired": true
+    },
+    {
+      "id": "carrelage",
+      "title": "AQC — Fissuration et décollement des sols carrelés",
+      "url": "https://qualiteconstruction.com/ressource/fiches-pathologie-batiment/fissuration-decollement-carrelages-sol-habitat/",
+      "scope": "Retour d’expérience technique français",
+      "publishedAt": "2024-01",
+      "consultedAt": "2026-10-27",
+      "status": "source_primaire_consultee",
+      "localValidationRequired": true
+    },
+    {
+      "id": "sols_souples",
+      "title": "AQC — Décollement des sols souples collés",
+      "url": "https://qualiteconstruction.com/ressource/fiches-pathologie-batiment/decollement-revetements-sols-souples-colles/",
+      "scope": "Retour d’expérience technique français",
+      "publishedAt": "2024-01",
+      "consultedAt": "2026-10-27",
+      "status": "source_primaire_consultee",
+      "localValidationRequired": true
+    },
+    {
+      "id": "assainissement",
+      "title": "AQC — Assainissement non collectif",
+      "url": "https://qualiteconstruction.com/ressource/fondations-et-infrastructures-fiches-pathologie-batiment/assainissement-non-collectif/",
+      "scope": "Retour d’expérience technique français",
+      "publishedAt": "2026",
+      "consultedAt": "2026-10-27",
+      "status": "source_primaire_consultee",
+      "localValidationRequired": true
+    },
+    {
+      "id": "electricite",
+      "title": "CONSUEL — Parcours d’attestation",
+      "url": "https://www.consuel.com/consuel-en-4-etapes/",
+      "scope": "France ; ne pas appliquer cette procédure à un autre pays",
+      "publishedAt": null,
+      "consultedAt": "2026-10-27",
+      "status": "source_primaire_consultee",
+      "localValidationRequired": true
+    },
+    {
+      "id": "reception",
+      "title": "Service Public — Contrat et réception de maison",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34554",
+      "scope": "France ; règles locales et contrat à vérifier ailleurs",
+      "publishedAt": null,
+      "consultedAt": "2026-10-27",
+      "status": "source_primaire_consultee",
+      "localValidationRequired": true
+    },
+    {
+      "id": "garanties",
+      "title": "Service Public — Garanties après réception",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2958",
+      "scope": "France uniquement pour les garanties légales",
+      "publishedAt": "2026-09-25",
+      "consultedAt": "2026-10-27",
+      "status": "source_primaire_consultee",
+      "localValidationRequired": true
+    },
+    {
+      "id": "ventilation",
+      "title": "ADEME — Choisir un système de ventilation",
+      "url": "https://agirpourlatransition.ademe.fr/particuliers/amenager-maison/renover/choisir-systeme-ventilation",
+      "scope": "Conseils pour logements français ; adaptation au climat local",
+      "publishedAt": "2025-11-03",
+      "consultedAt": "2026-10-27",
+      "status": "source_primaire_consultee",
+      "localValidationRequired": true
+    },
+    {
+      "id": "isolation",
+      "title": "ADEME — Tout savoir sur l’isolation",
+      "url": "https://agirpourlatransition.ademe.fr/particuliers/amenager-maison/renover/tout-savoir-isolation",
+      "scope": "Conseils pour logements français ; adaptation au climat local",
+      "publishedAt": null,
+      "consultedAt": "2026-10-27",
+      "status": "source_primaire_consultee",
+      "localValidationRequired": true
+    },
+    {
+      "id": "passif",
+      "title": "Cerema — Comment rafraîchir les bâtiments",
+      "url": "https://www.cerema.fr/fr/actualites/comment-rafraichir-batiments",
+      "scope": "Principes de conception ; dimensionnement et contexte à vérifier",
+      "publishedAt": null,
+      "consultedAt": "2026-10-27",
+      "status": "source_primaire_consultee",
+      "localValidationRequired": true
+    },
+    {
+      "id": "tropical",
+      "title": "Cerema — Rafraîchir les bâtiments non climatisés",
+      "url": "https://www.cerema.fr/fr/actualites/rafraichir-batiments-publics-non-climatises",
+      "scope": "Bâtiments publics, avec discussion du climat ultramarin ; pas étude du Gabon",
+      "publishedAt": null,
+      "consultedAt": "2026-10-27",
+      "status": "source_primaire_consultee",
+      "localValidationRequired": true
+    },
+    {
+      "id": "pathologies",
+      "title": "AQC — Collection des fiches pathologie",
+      "url": "https://qualiteconstruction.com/centre-de-ressources/?collection%5B%5D=fiches-pathologie-batiment",
+      "scope": "Index technique de prévention ; ne constitue pas une norme",
+      "publishedAt": "2026-09",
+      "consultedAt": "2026-10-27",
+      "status": "source_primaire_consultee",
+      "localValidationRequired": true
+    }
+  ],
+  "guide": [
+    {
+      "id": "terrain",
+      "order": 1,
+      "title": "Étude du terrain et du sol",
+      "summary": "Relever les lieux, les accès, l’eau visible et faire étudier le sol.",
+      "what": "Relever les lieux, les accès, l’eau visible et faire étudier le sol.",
+      "why": "Adapter le projet aux contraintes réelles de la parcelle.",
+      "who": [
+        "Géotechnicien",
+        "Géomètre",
+        "Architecte"
+      ],
+      "duration": null,
+      "durationLabel": "À établir avec les entreprises selon le projet, la météo et les temps techniques des produits.",
+      "materials": [
+        "Rapports et relevés"
+      ],
+      "checks": [
+        "Rapport daté rattaché à la bonne parcelle",
+        "Contraintes et investigations manquantes indiquées"
+      ],
+      "checksBeforePaying": [
+        "Rapport daté rattaché à la bonne parcelle",
+        "Contraintes et investigations manquantes indiquées"
+      ],
+      "questions": [
+        "Quelle étude correspond à notre maison ?",
+        "Qui doit interpréter le rapport pour les fondations ?"
+      ],
+      "commonMistakes": [
+        "Confondre terrain plat et sol adapté",
+        "Choisir les fondations avant l’étude"
+      ],
+      "sourceIds": [
+        "terrain",
+        "fondations"
+      ],
+      "status": "contenu_pedagogique_a_adapter_localement",
+      "localValidationRequired": true,
+      "illustration": {
+        "kind": "process",
+        "steps": [
+          "Préparer avec le professionnel",
+          "Réaliser selon les documents du projet",
+          "Contrôler et consigner avant fermeture"
+        ]
+      }
+    },
+    {
+      "id": "implantation",
+      "order": 2,
+      "title": "Bornage et implantation",
+      "summary": "Clarifier les limites puis reporter la position de la construction sur le terrain.",
+      "what": "Clarifier les limites puis reporter la position de la construction sur le terrain.",
+      "why": "Éviter un projet placé sur des limites ou des repères incertains.",
+      "who": [
+        "Géomètre compétent localement",
+        "Architecte"
+      ],
+      "duration": null,
+      "durationLabel": "À établir avec les entreprises selon le projet, la météo et les temps techniques des produits.",
+      "materials": [
+        "Repères et documents de limites"
+      ],
+      "checks": [
+        "Plan de limites et repères conservés",
+        "Implantation confrontée aux autorisations et retraits locaux"
+      ],
+      "checksBeforePaying": [
+        "Plan de limites et repères conservés",
+        "Implantation confrontée aux autorisations et retraits locaux"
+      ],
+      "questions": [
+        "Quelles limites ont été établies contradictoirement ?",
+        "Qui vérifie les niveaux et la position de la maison ?"
+      ],
+      "commonMistakes": [
+        "Utiliser une clôture comme preuve de limite",
+        "Déplacer un repère sans le professionnel"
+      ],
+      "sourceIds": [
+        "bornage",
+        "terrain"
+      ],
+      "status": "contenu_pedagogique_a_adapter_localement",
+      "localValidationRequired": true,
+      "illustration": {
+        "kind": "process",
+        "steps": [
+          "Préparer avec le professionnel",
+          "Réaliser selon les documents du projet",
+          "Contrôler et consigner avant fermeture"
+        ]
+      }
+    },
+    {
+      "id": "terrassement",
+      "order": 3,
+      "title": "Terrassement",
+      "summary": "Préparer les zones de travaux et les mouvements de terre selon les études.",
+      "what": "Préparer les zones de travaux et les mouvements de terre selon les études.",
+      "why": "Permettre les ouvrages prévus en tenant compte du terrain et des réseaux.",
+      "who": [
+        "Terrassier",
+        "Maître d’œuvre",
+        "Géotechnicien"
+      ],
+      "duration": null,
+      "durationLabel": "À établir avec les entreprises selon le projet, la météo et les temps techniques des produits.",
+      "materials": [
+        "Moyens définis par l’entreprise"
+      ],
+      "checks": [
+        "Réseaux et accès de chantier identifiés",
+        "Dispositif de protection des fouilles expliqué par l’entreprise"
+      ],
+      "checksBeforePaying": [
+        "Réseaux et accès de chantier identifiés",
+        "Dispositif de protection des fouilles expliqué par l’entreprise"
+      ],
+      "questions": [
+        "Que faites-vous si le sol découvert diffère de l’étude ?",
+        "Comment sont protégés les voisins et les personnes ?"
+      ],
+      "commonMistakes": [
+        "Entrer dans une fouille non sécurisée",
+        "Creuser près d’un réseau non localisé"
+      ],
+      "sourceIds": [
+        "reseaux",
+        "fouilles"
+      ],
+      "status": "contenu_pedagogique_a_adapter_localement",
+      "localValidationRequired": true,
+      "illustration": {
+        "kind": "process",
+        "steps": [
+          "Préparer avec le professionnel",
+          "Réaliser selon les documents du projet",
+          "Contrôler et consigner avant fermeture"
+        ]
+      }
+    },
+    {
+      "id": "fondations",
+      "order": 4,
+      "title": "Fondations",
+      "summary": "Le professionnel réalise les appuis de l’ouvrage d’après une conception structurelle spécifique.",
+      "what": "Le professionnel réalise les appuis de l’ouvrage d’après une conception structurelle spécifique.",
+      "why": "Transmettre les charges au sol suivant les études du projet.",
+      "who": [
+        "Ingénieur structure",
+        "Géotechnicien",
+        "Maçon"
+      ],
+      "duration": null,
+      "durationLabel": "À établir avec les entreprises selon le projet, la météo et les temps techniques des produits.",
+      "materials": [
+        "Matériaux définis par l’étude structurelle"
+      ],
+      "checks": [
+        "Plans d’exécution signés par le responsable compétent",
+        "Compte rendu de contrôle avant recouvrement"
+      ],
+      "checksBeforePaying": [
+        "Plans d’exécution signés par le responsable compétent",
+        "Compte rendu de contrôle avant recouvrement"
+      ],
+      "questions": [
+        "Qui a validé le sol réellement rencontré ?",
+        "Quels contrôles et documents seront remis ?"
+      ],
+      "commonMistakes": [
+        "Copier les fondations d’un voisin",
+        "Modifier un ferraillage sans étude"
+      ],
+      "sourceIds": [
+        "fondations",
+        "sols_sensibles"
+      ],
+      "status": "contenu_pedagogique_a_adapter_localement",
+      "localValidationRequired": true,
+      "illustration": {
+        "kind": "process",
+        "steps": [
+          "Préparer avec le professionnel",
+          "Réaliser selon les documents du projet",
+          "Contrôler et consigner avant fermeture"
+        ]
+      }
+    },
+    {
+      "id": "soubassement",
+      "order": 5,
+      "title": "Soubassement et dallage",
+      "summary": "Construire la partie basse de la maison, puis les supports du sol prévus.",
+      "what": "Construire la partie basse de la maison, puis les supports du sol prévus.",
+      "why": "Relier le bâtiment au terrain et préparer les usages du niveau bas.",
+      "who": [
+        "Maçon",
+        "Ingénieur structure",
+        "Maître d’œuvre"
+      ],
+      "duration": null,
+      "durationLabel": "À établir avec les entreprises selon le projet, la météo et les temps techniques des produits.",
+      "materials": [
+        "Système de plancher bas étudié"
+      ],
+      "checks": [
+        "Ouvrages cachés photographiés avec repères",
+        "Passages de réseaux prévus avant fermeture"
+      ],
+      "checksBeforePaying": [
+        "Ouvrages cachés photographiés avec repères",
+        "Passages de réseaux prévus avant fermeture"
+      ],
+      "questions": [
+        "Quel système est prévu : dallage, vide sanitaire ou sous-sol ?",
+        "Qui contrôle les interfaces avec l’humidité ?"
+      ],
+      "commonMistakes": [
+        "Confondre les différents systèmes de plancher bas",
+        "Cacher une anomalie avant contrôle"
+      ],
+      "sourceIds": [
+        "humidite",
+        "pathologies"
+      ],
+      "status": "contenu_pedagogique_a_adapter_localement",
+      "localValidationRequired": true,
+      "illustration": {
+        "kind": "process",
+        "steps": [
+          "Préparer avec le professionnel",
+          "Réaliser selon les documents du projet",
+          "Contrôler et consigner avant fermeture"
+        ]
+      }
+    },
+    {
+      "id": "drainage",
+      "order": 6,
+      "title": "Drainage et étanchéité",
+      "summary": "Traiter l’eau autour des parties enterrées suivant une étude adaptée.",
+      "what": "Traiter l’eau autour des parties enterrées suivant une étude adaptée.",
+      "why": "Limiter les entrées d’eau sans déplacer le problème vers un voisin ou les fondations.",
+      "who": [
+        "Entreprise d’étanchéité",
+        "Géotechnicien",
+        "Concepteur"
+      ],
+      "duration": null,
+      "durationLabel": "À établir avec les entreprises selon le projet, la météo et les temps techniques des produits.",
+      "materials": [
+        "Système défini après étude de l’eau"
+      ],
+      "checks": [
+        "Solution d’eau et exutoire explicités",
+        "Protection vérifiée avant remblaiement"
+      ],
+      "checksBeforePaying": [
+        "Solution d’eau et exutoire explicités",
+        "Protection vérifiée avant remblaiement"
+      ],
+      "questions": [
+        "Où ira l’eau collectée ?",
+        "Qui valide la compatibilité du drainage avec le sol ?"
+      ],
+      "commonMistakes": [
+        "Installer un drain par automatisme",
+        "Remblayer avant de vérifier l’étanchéité"
+      ],
+      "sourceIds": [
+        "humidite",
+        "sols_sensibles"
+      ],
+      "status": "contenu_pedagogique_a_adapter_localement",
+      "localValidationRequired": true,
+      "illustration": {
+        "kind": "process",
+        "steps": [
+          "Préparer avec le professionnel",
+          "Réaliser selon les documents du projet",
+          "Contrôler et consigner avant fermeture"
+        ]
+      }
+    },
+    {
+      "id": "murs",
+      "order": 7,
+      "title": "Élévation des murs et chaînages",
+      "summary": "Élever les parois et réaliser les liaisons structurelles décrites par les plans professionnels.",
+      "what": "Élever les parois et réaliser les liaisons structurelles décrites par les plans professionnels.",
+      "why": "Former les espaces et assurer les liaisons prévues par l’étude.",
+      "who": [
+        "Maçon",
+        "Ingénieur structure",
+        "Maître d’œuvre"
+      ],
+      "duration": null,
+      "durationLabel": "À établir avec les entreprises selon le projet, la météo et les temps techniques des produits.",
+      "materials": [
+        "Parois et liaisons définies par l’étude"
+      ],
+      "checks": [
+        "Emplacements d’ouvertures comparés aux plans",
+        "Contrôles structurels tracés avant dissimulation"
+      ],
+      "checksBeforePaying": [
+        "Emplacements d’ouvertures comparés aux plans",
+        "Contrôles structurels tracés avant dissimulation"
+      ],
+      "questions": [
+        "Quelles modifications exigent une nouvelle étude ?",
+        "Comment seront traités les raccords entre matériaux ?"
+      ],
+      "commonMistakes": [
+        "Supprimer un élément supposé secondaire",
+        "Déplacer une ouverture sans accord du concepteur"
+      ],
+      "sourceIds": [
+        "pathologies",
+        "fondations"
+      ],
+      "status": "contenu_pedagogique_a_adapter_localement",
+      "localValidationRequired": true,
+      "illustration": {
+        "kind": "process",
+        "steps": [
+          "Préparer avec le professionnel",
+          "Réaliser selon les documents du projet",
+          "Contrôler et consigner avant fermeture"
+        ]
+      }
+    },
+    {
+      "id": "planchers",
+      "order": 8,
+      "title": "Planchers et escaliers",
+      "summary": "Réaliser les supports de niveaux et les circulations verticales conçus pour le projet.",
+      "what": "Réaliser les supports de niveaux et les circulations verticales conçus pour le projet.",
+      "why": "Organiser les niveaux et leurs accès avec une étude propre à la maison.",
+      "who": [
+        "Ingénieur structure",
+        "Maçon ou entreprise spécialisée"
+      ],
+      "duration": null,
+      "durationLabel": "À établir avec les entreprises selon le projet, la météo et les temps techniques des produits.",
+      "materials": [
+        "Système structurel défini par l’ingénieur"
+      ],
+      "checks": [
+        "Plans d’exécution disponibles",
+        "Protections temporaires et contrôles documentés"
+      ],
+      "checksBeforePaying": [
+        "Plans d’exécution disponibles",
+        "Protections temporaires et contrôles documentés"
+      ],
+      "questions": [
+        "Qui valide les charges et les appuis ?",
+        "Comment vérifie-t-on l’usage et l’accessibilité de l’escalier ?"
+      ],
+      "commonMistakes": [
+        "Utiliser une épaisseur universelle",
+        "Retirer un étai sans consigne professionnelle"
+      ],
+      "sourceIds": [
+        "pathologies",
+        "fouilles"
+      ],
+      "status": "contenu_pedagogique_a_adapter_localement",
+      "localValidationRequired": true,
+      "illustration": {
+        "kind": "process",
+        "steps": [
+          "Préparer avec le professionnel",
+          "Réaliser selon les documents du projet",
+          "Contrôler et consigner avant fermeture"
+        ]
+      }
+    },
+    {
+      "id": "toiture",
+      "order": 9,
+      "title": "Charpente et toiture",
+      "summary": "Mettre en place la structure du toit, sa couverture et ses évacuations.",
+      "what": "Mettre en place la structure du toit, sa couverture et ses évacuations.",
+      "why": "Protéger la maison de la pluie en traitant aussi l’humidité sous couverture.",
+      "who": [
+        "Charpentier",
+        "Couvreur",
+        "Ingénieur structure"
+      ],
+      "duration": null,
+      "durationLabel": "À établir avec les entreprises selon le projet, la météo et les temps techniques des produits.",
+      "materials": [
+        "Charpente, couverture, évacuations"
+      ],
+      "checks": [
+        "Évacuations et points singuliers examinés",
+        "Documentation des produits et de leur entretien remise"
+      ],
+      "checksBeforePaying": [
+        "Évacuations et points singuliers examinés",
+        "Documentation des produits et de leur entretien remise"
+      ],
+      "questions": [
+        "Comment seront traités ventilation et condensation ?",
+        "Quel entretien des évacuations est nécessaire ?"
+      ],
+      "commonMistakes": [
+        "Confondre condensation et infiltration",
+        "Monter sur une toiture sans protection"
+      ],
+      "sourceIds": [
+        "toiture",
+        "bois"
+      ],
+      "status": "contenu_pedagogique_a_adapter_localement",
+      "localValidationRequired": true,
+      "illustration": {
+        "kind": "process",
+        "steps": [
+          "Préparer avec le professionnel",
+          "Réaliser selon les documents du projet",
+          "Contrôler et consigner avant fermeture"
+        ]
+      }
+    },
+    {
+      "id": "menuiseries",
+      "order": 10,
+      "title": "Menuiseries",
+      "summary": "Poser portes, fenêtres, volets et leurs raccords aux parois.",
+      "what": "Poser portes, fenêtres, volets et leurs raccords aux parois.",
+      "why": "Gérer accès, lumière, protection solaire et échanges avec l’extérieur.",
+      "who": [
+        "Menuisier",
+        "Maître d’œuvre"
+      ],
+      "duration": null,
+      "durationLabel": "À établir avec les entreprises selon le projet, la météo et les temps techniques des produits.",
+      "materials": [
+        "Portes, fenêtres et produits de raccord"
+      ],
+      "checks": [
+        "Ouverture et fermeture de chaque élément essayées",
+        "Joints et traces d’humidité examinés"
+      ],
+      "checksBeforePaying": [
+        "Ouverture et fermeture de chaque élément essayées",
+        "Joints et traces d’humidité examinés"
+      ],
+      "questions": [
+        "Quels réglages et entretien prévoir ?",
+        "Comment conciliez-vous ombre, bruit et ventilation ?"
+      ],
+      "commonMistakes": [
+        "Accepter un ouvrant qui frotte sans réserve",
+        "Ignorer les raccords au mur"
+      ],
+      "sourceIds": [
+        "revêtements",
+        "passif"
+      ],
+      "status": "contenu_pedagogique_a_adapter_localement",
+      "localValidationRequired": true,
+      "illustration": {
+        "kind": "process",
+        "steps": [
+          "Préparer avec le professionnel",
+          "Réaliser selon les documents du projet",
+          "Contrôler et consigner avant fermeture"
+        ]
+      }
+    },
+    {
+      "id": "electricite",
+      "order": 11,
+      "title": "Électricité",
+      "summary": "Faire concevoir, poser et contrôler l’installation par une entreprise compétente.",
+      "what": "Faire concevoir, poser et contrôler l’installation par une entreprise compétente.",
+      "why": "Alimenter les usages prévus et faire vérifier la protection des personnes.",
+      "who": [
+        "Électricien qualifié",
+        "Organisme de contrôle selon pays"
+      ],
+      "duration": null,
+      "durationLabel": "À établir avec les entreprises selon le projet, la météo et les temps techniques des produits.",
+      "materials": [
+        "Équipements et protections choisis par l’électricien"
+      ],
+      "checks": [
+        "Documents de contrôle prévus localement remis",
+        "Repérage des circuits et notices conservés"
+      ],
+      "checksBeforePaying": [
+        "Documents de contrôle prévus localement remis",
+        "Repérage des circuits et notices conservés"
+      ],
+      "questions": [
+        "Qui réalise les essais avant mise en service ?",
+        "Quelle procédure locale s’applique au raccordement ?"
+      ],
+      "commonMistakes": [
+        "Mettre sous tension un montage non contrôlé",
+        "Confondre une liste d’équipements et une étude électrique"
+      ],
+      "sourceIds": [
+        "electricite"
+      ],
+      "status": "contenu_pedagogique_a_adapter_localement",
+      "localValidationRequired": true,
+      "illustration": {
+        "kind": "process",
+        "steps": [
+          "Préparer avec le professionnel",
+          "Réaliser selon les documents du projet",
+          "Contrôler et consigner avant fermeture"
+        ]
+      }
+    },
+    {
+      "id": "plomberie",
+      "order": 12,
+      "title": "Plomberie et assainissement",
+      "summary": "Organiser arrivées d’eau, évacuations et traitement des eaux usées.",
+      "what": "Organiser arrivées d’eau, évacuations et traitement des eaux usées.",
+      "why": "Assurer les usages sanitaires avec une solution compatible avec le terrain.",
+      "who": [
+        "Plombier",
+        "Spécialiste assainissement",
+        "Autorité locale compétente"
+      ],
+      "duration": null,
+      "durationLabel": "À établir avec les entreprises selon le projet, la météo et les temps techniques des produits.",
+      "materials": [
+        "Canalisations et équipements étudiés"
+      ],
+      "checks": [
+        "Essais de fonctionnement et d’étanchéité consignés",
+        "Accès d’entretien localisés"
+      ],
+      "checksBeforePaying": [
+        "Essais de fonctionnement et d’étanchéité consignés",
+        "Accès d’entretien localisés"
+      ],
+      "questions": [
+        "Comment vérifiez-vous les réseaux avant fermeture ?",
+        "Quelle solution d’assainissement a été étudiée pour ce sol ?"
+      ],
+      "commonMistakes": [
+        "Choisir une filière sans étude du terrain",
+        "Oublier l’accès pour l’entretien"
+      ],
+      "sourceIds": [
+        "assainissement"
+      ],
+      "status": "contenu_pedagogique_a_adapter_localement",
+      "localValidationRequired": true,
+      "illustration": {
+        "kind": "process",
+        "steps": [
+          "Préparer avec le professionnel",
+          "Réaliser selon les documents du projet",
+          "Contrôler et consigner avant fermeture"
+        ]
+      }
+    },
+    {
+      "id": "cloisons",
+      "order": 13,
+      "title": "Enduits, cloisons et plafonds",
+      "summary": "Poser les séparations et finitions intermédiaires après coordination des réseaux.",
+      "what": "Poser les séparations et finitions intermédiaires après coordination des réseaux.",
+      "why": "Préparer les espaces intérieurs et les supports des finitions.",
+      "who": [
+        "Plaquiste ou maçon",
+        "Entreprises des réseaux"
+      ],
+      "duration": null,
+      "durationLabel": "À établir avec les entreprises selon le projet, la météo et les temps techniques des produits.",
+      "materials": [
+        "Cloisons, enduits et plafonds adaptés aux locaux"
+      ],
+      "checks": [
+        "Réseaux et interventions cachées photographiés",
+        "Supports et traces d’humidité examinés"
+      ],
+      "checksBeforePaying": [
+        "Réseaux et interventions cachées photographiés",
+        "Supports et traces d’humidité examinés"
+      ],
+      "questions": [
+        "Quels accès de maintenance resteront disponibles ?",
+        "Comment contrôlez-vous le séchage avant finition ?"
+      ],
+      "commonMistakes": [
+        "Fermer sans essais préalables des réseaux",
+        "Masquer une fuite par un plafond neuf"
+      ],
+      "sourceIds": [
+        "revêtements",
+        "toiture"
+      ],
+      "status": "contenu_pedagogique_a_adapter_localement",
+      "localValidationRequired": true,
+      "illustration": {
+        "kind": "process",
+        "steps": [
+          "Préparer avec le professionnel",
+          "Réaliser selon les documents du projet",
+          "Contrôler et consigner avant fermeture"
+        ]
+      }
+    },
+    {
+      "id": "sols",
+      "order": 14,
+      "title": "Sols et carrelage",
+      "summary": "Préparer le support puis poser le revêtement choisi avec le système compatible.",
+      "what": "Préparer le support puis poser le revêtement choisi avec le système compatible.",
+      "why": "Obtenir une surface utilisable sans négliger l’état du support.",
+      "who": [
+        "Carreleur",
+        "Solier",
+        "Maître d’œuvre"
+      ],
+      "duration": null,
+      "durationLabel": "À établir avec les entreprises selon le projet, la météo et les temps techniques des produits.",
+      "materials": [
+        "Revêtement et système de pose compatibles"
+      ],
+      "checks": [
+        "État et humidité du support vérifiés par l’entreprise",
+        "Joints, seuils et défauts visibles consignés"
+      ],
+      "checksBeforePaying": [
+        "État et humidité du support vérifiés par l’entreprise",
+        "Joints, seuils et défauts visibles consignés"
+      ],
+      "questions": [
+        "Quels contrôles précèdent la pose ?",
+        "Quels délais de séchage et entretien impose le produit ?"
+      ],
+      "commonMistakes": [
+        "Poser sur un support encore inadapté",
+        "Précipiter la pose pour tenir une date"
+      ],
+      "sourceIds": [
+        "carrelage",
+        "sols_souples"
+      ],
+      "status": "contenu_pedagogique_a_adapter_localement",
+      "localValidationRequired": true,
+      "illustration": {
+        "kind": "process",
+        "steps": [
+          "Préparer avec le professionnel",
+          "Réaliser selon les documents du projet",
+          "Contrôler et consigner avant fermeture"
+        ]
+      }
+    },
+    {
+      "id": "peinture",
+      "order": 15,
+      "title": "Peinture",
+      "summary": "Préparer les surfaces et appliquer les produits compatibles avec leur usage.",
+      "what": "Préparer les surfaces et appliquer les produits compatibles avec leur usage.",
+      "why": "Protéger et finir les supports tout en permettant le suivi de leur état.",
+      "who": [
+        "Peintre",
+        "Maître d’œuvre"
+      ],
+      "duration": null,
+      "durationLabel": "À établir avec les entreprises selon le projet, la météo et les temps techniques des produits.",
+      "materials": [
+        "Préparation, peinture et produits adaptés au support"
+      ],
+      "checks": [
+        "Support sec et propre confirmé par l’entreprise",
+        "Références, teintes et notices conservées"
+      ],
+      "checksBeforePaying": [
+        "Support sec et propre confirmé par l’entreprise",
+        "Références, teintes et notices conservées"
+      ],
+      "questions": [
+        "Comment traitez-vous une trace d’humidité avant peinture ?",
+        "Quelles conditions d’aération et de remise en usage ?"
+      ],
+      "commonMistakes": [
+        "Repeindre une moisissure sans diagnostic",
+        "Négliger la préparation du support"
+      ],
+      "sourceIds": [
+        "revêtements",
+        "ventilation"
+      ],
+      "status": "contenu_pedagogique_a_adapter_localement",
+      "localValidationRequired": true,
+      "illustration": {
+        "kind": "process",
+        "steps": [
+          "Préparer avec le professionnel",
+          "Réaliser selon les documents du projet",
+          "Contrôler et consigner avant fermeture"
+        ]
+      }
+    },
+    {
+      "id": "reception",
+      "order": 16,
+      "title": "Finitions, nettoyage et réception",
+      "summary": "Parcourir le chantier achevé, essayer les équipements et consigner les défauts.",
+      "what": "Parcourir le chantier achevé, essayer les équipements et consigner les défauts.",
+      "why": "Formaliser l’état livré et organiser la résolution des points restants.",
+      "who": [
+        "Client",
+        "Maître d’œuvre",
+        "Entreprises",
+        "Professionnel d’assistance"
+      ],
+      "duration": null,
+      "durationLabel": "À établir avec les entreprises selon le projet, la météo et les temps techniques des produits.",
+      "materials": [
+        "Dossier et notices de l’ouvrage"
+      ],
+      "checks": [
+        "Liste écrite et localisée des défauts",
+        "Documents et conditions du contrat relus avant tout solde"
+      ],
+      "checksBeforePaying": [
+        "Liste écrite et localisée des défauts",
+        "Documents et conditions du contrat relus avant tout solde"
+      ],
+      "questions": [
+        "Qui corrige chaque point et à quelle date convenue ?",
+        "Quels documents et garanties s’appliquent dans ce pays ?"
+      ],
+      "commonMistakes": [
+        "Signer sans lire ni visiter",
+        "Supposer que les garanties françaises sont universelles"
+      ],
+      "sourceIds": [
+        "reception",
+        "garanties"
+      ],
+      "status": "contenu_pedagogique_a_adapter_localement",
+      "localValidationRequired": true,
+      "illustration": {
+        "kind": "process",
+        "steps": [
+          "Préparer avec le professionnel",
+          "Réaliser selon les documents du projet",
+          "Contrôler et consigner avant fermeture"
+        ]
+      }
+    }
+  ],
+  "materials": [
+    {
+      "id": "structure",
+      "title": "Structure et fondations",
+      "recommended": "Le système doit être choisi et dimensionné par un ingénieur à partir du sol et du projet.",
+      "economicAlternative": "Comparer des solutions étudiées équivalentes ; aucun système économique universel.",
+      "premiumAlternative": "Comparer suivi, contrôle et qualité d’exécution, plutôt que surdimensionner sans étude.",
+      "risk": "Un matériau seul ne démontre ni stabilité ni conformité.",
+      "sourceIds": [
+        "fondations",
+        "sols_sensibles"
+      ],
+      "localAvailability": null,
+      "price": null,
+      "lifespan": null,
+      "thermalPerformance": null,
+      "maintenance": "À préciser selon le produit et sa notice.",
+      "humidityResistance": null,
+      "termiteResistance": null,
+      "corrosionResistance": null,
+      "relativeCost": null,
+      "status": "comparaison_pedagogique_sans_prescription",
+      "consultedAt": "2026-10-27",
+      "localValidationRequired": true
+    },
+    {
+      "id": "murs",
+      "title": "Murs et parois",
+      "recommended": "Comparer maçonnerie, bois et autres systèmes selon le climat, les compétences et les documents techniques.",
+      "economicAlternative": "Demander un système courant maîtrisé par les entreprises locales.",
+      "premiumAlternative": "Étudier une enveloppe plus performante et ses raccords avec un spécialiste.",
+      "risk": "Les interfaces et l’exposition à l’eau demandent une étude propre au système.",
+      "sourceIds": [
+        "pathologies",
+        "bois"
+      ],
+      "localAvailability": null,
+      "price": null,
+      "lifespan": null,
+      "thermalPerformance": null,
+      "maintenance": "À préciser selon le produit et sa notice.",
+      "humidityResistance": null,
+      "termiteResistance": null,
+      "corrosionResistance": null,
+      "relativeCost": null,
+      "status": "comparaison_pedagogique_sans_prescription",
+      "consultedAt": "2026-10-27",
+      "localValidationRequired": true
+    },
+    {
+      "id": "dalles",
+      "title": "Dalles et planchers",
+      "recommended": "Faire préciser le système de sol et ses appuis avant le choix de finition.",
+      "economicAlternative": "Rationaliser les formes avec l’ingénieur, sans modifier les prescriptions.",
+      "premiumAlternative": "Comparer confort acoustique et thermique sur des solutions étudiées.",
+      "risk": "Ne pas déduire une épaisseur ou une portée d’une image de plan.",
+      "sourceIds": [
+        "fondations",
+        "carrelage"
+      ],
+      "localAvailability": null,
+      "price": null,
+      "lifespan": null,
+      "thermalPerformance": null,
+      "maintenance": "À préciser selon le produit et sa notice.",
+      "humidityResistance": null,
+      "termiteResistance": null,
+      "corrosionResistance": null,
+      "relativeCost": null,
+      "status": "comparaison_pedagogique_sans_prescription",
+      "consultedAt": "2026-10-27",
+      "localValidationRequired": true
+    },
+    {
+      "id": "toiture",
+      "title": "Toiture et couverture",
+      "recommended": "Comparer couverture, ventilation, isolation, évacuation de pluie et accès d’entretien ensemble.",
+      "economicAlternative": "Demander une solution locale simple et sa fiche d’entretien.",
+      "premiumAlternative": "Comparer le confort thermique, acoustique et la protection contre la corrosion avec fiches produits.",
+      "risk": "Une couverture métallique peut connaître de la condensation ; le détail complet doit être conçu.",
+      "sourceIds": [
+        "toiture",
+        "passif"
+      ],
+      "localAvailability": null,
+      "price": null,
+      "lifespan": null,
+      "thermalPerformance": null,
+      "maintenance": "À préciser selon le produit et sa notice.",
+      "humidityResistance": null,
+      "termiteResistance": null,
+      "corrosionResistance": null,
+      "relativeCost": null,
+      "status": "comparaison_pedagogique_sans_prescription",
+      "consultedAt": "2026-10-27",
+      "localValidationRequired": true
+    },
+    {
+      "id": "isolation",
+      "title": "Isolation",
+      "recommended": "Choisir le système complet selon climat, paroi, eau, feu et règles locales.",
+      "economicAlternative": "Comparer les postes prioritaires par une étude thermique.",
+      "premiumAlternative": "Comparer performances déclarées et qualité des raccords, sans attribuer un gain non calculé.",
+      "risk": "Une isolation discontinue peut créer des zones de faiblesse ; la gestion de vapeur ne s’improvise pas.",
+      "sourceIds": [
+        "isolation",
+        "ventilation"
+      ],
+      "localAvailability": null,
+      "price": null,
+      "lifespan": null,
+      "thermalPerformance": null,
+      "maintenance": "À préciser selon le produit et sa notice.",
+      "humidityResistance": null,
+      "termiteResistance": null,
+      "corrosionResistance": null,
+      "relativeCost": null,
+      "status": "comparaison_pedagogique_sans_prescription",
+      "consultedAt": "2026-10-27",
+      "localValidationRequired": true
+    },
+    {
+      "id": "menuiseries",
+      "title": "Fenêtres, portes et protections solaires",
+      "recommended": "Étudier lumière, ombre, ouverture, bruit et entretien conjointement.",
+      "economicAlternative": "Comparer dimensions standard et protections adaptées.",
+      "premiumAlternative": "Comparer performances déclarées, réparabilité et raccords au bâti.",
+      "risk": "Une grande baie non protégée peut augmenter les apports solaires ; à étudier selon orientation.",
+      "sourceIds": [
+        "passif",
+        "revêtements"
+      ],
+      "localAvailability": null,
+      "price": null,
+      "lifespan": null,
+      "thermalPerformance": null,
+      "maintenance": "À préciser selon le produit et sa notice.",
+      "humidityResistance": null,
+      "termiteResistance": null,
+      "corrosionResistance": null,
+      "relativeCost": null,
+      "status": "comparaison_pedagogique_sans_prescription",
+      "consultedAt": "2026-10-27",
+      "localValidationRequired": true
+    },
+    {
+      "id": "sols",
+      "title": "Sols et revêtements",
+      "recommended": "Adapter le revêtement à la pièce et vérifier le support avec l’entreprise.",
+      "economicAlternative": "Comparer un revêtement courant avec préparation et pose incluses.",
+      "premiumAlternative": "Comparer usage, entretien et système de pose, pas seulement l’apparence.",
+      "risk": "L’humidité du support et une préparation inadéquate peuvent provoquer des désordres.",
+      "sourceIds": [
+        "carrelage",
+        "sols_souples"
+      ],
+      "localAvailability": null,
+      "price": null,
+      "lifespan": null,
+      "thermalPerformance": null,
+      "maintenance": "À préciser selon le produit et sa notice.",
+      "humidityResistance": null,
+      "termiteResistance": null,
+      "corrosionResistance": null,
+      "relativeCost": null,
+      "status": "comparaison_pedagogique_sans_prescription",
+      "consultedAt": "2026-10-27",
+      "localValidationRequired": true
+    },
+    {
+      "id": "peintures",
+      "title": "Peintures et finitions",
+      "recommended": "Choisir le produit d’après le support, l’usage et les informations du fabricant.",
+      "economicAlternative": "Comparer une préparation correcte et un produit adapté.",
+      "premiumAlternative": "Comparer facilité d’entretien et documentation sur les émissions ; vérifier les labels réels.",
+      "risk": "Une peinture neuve ne traite pas la cause d’une humidité ou d’une moisissure.",
+      "sourceIds": [
+        "revêtements",
+        "ventilation"
+      ],
+      "localAvailability": null,
+      "price": null,
+      "lifespan": null,
+      "thermalPerformance": null,
+      "maintenance": "À préciser selon le produit et sa notice.",
+      "humidityResistance": null,
+      "termiteResistance": null,
+      "corrosionResistance": null,
+      "relativeCost": null,
+      "status": "comparaison_pedagogique_sans_prescription",
+      "consultedAt": "2026-10-27",
+      "localValidationRequired": true
+    },
+    {
+      "id": "etancheite",
+      "title": "Étanchéité",
+      "recommended": "Faire concevoir les raccords et protections de l’ensemble, avant de choisir un produit isolé.",
+      "economicAlternative": "Comparer un système documenté et maîtrisé localement.",
+      "premiumAlternative": "Prévoir contrôles et accès d’entretien dans le coût complet.",
+      "risk": "Un produit dit étanche ne valide pas à lui seul une paroi ou un sous-sol.",
+      "sourceIds": [
+        "humidite"
+      ],
+      "localAvailability": null,
+      "price": null,
+      "lifespan": null,
+      "thermalPerformance": null,
+      "maintenance": "À préciser selon le produit et sa notice.",
+      "humidityResistance": null,
+      "termiteResistance": null,
+      "corrosionResistance": null,
+      "relativeCost": null,
+      "status": "comparaison_pedagogique_sans_prescription",
+      "consultedAt": "2026-10-27",
+      "localValidationRequired": true
+    },
+    {
+      "id": "drainage",
+      "title": "Gestion de l’eau et drainage",
+      "recommended": "Étudier origine, cheminement et exutoire de l’eau avec le professionnel du sol.",
+      "economicAlternative": "Comparer les solutions après diagnostic, sans drain systématique.",
+      "premiumAlternative": "Prévoir inspection, entretien et suivi de la solution retenue.",
+      "risk": "Une mauvaise gestion de l’eau près des fondations peut aggraver des désordres.",
+      "sourceIds": [
+        "humidite",
+        "sols_sensibles"
+      ],
+      "localAvailability": null,
+      "price": null,
+      "lifespan": null,
+      "thermalPerformance": null,
+      "maintenance": "À préciser selon le produit et sa notice.",
+      "humidityResistance": null,
+      "termiteResistance": null,
+      "corrosionResistance": null,
+      "relativeCost": null,
+      "status": "comparaison_pedagogique_sans_prescription",
+      "consultedAt": "2026-10-27",
+      "localValidationRequired": true
+    }
+  ],
+  "passiveDesign": [
+    {
+      "id": "ombre",
+      "title": "Créer de l’ombre avant le vitrage",
+      "advice": "Étudier protections solaires extérieures, végétation et espaces intermédiaires selon la course du soleil.",
+      "limitation": "Le dimensionnement dépend de la latitude, de l’orientation et des usages.",
+      "sourceIds": [
+        "passif",
+        "isolation"
+      ],
+      "status": "principe_general_a_etudier",
+      "consultedAt": "2026-10-27"
+    },
+    {
+      "id": "ventilation",
+      "title": "Prévoir des chemins pour l’air",
+      "advice": "Étudier des ouvertures sur des façades distinctes et les passages intérieurs.",
+      "limitation": "La ventilation naturelle dépend du vent, de la température, de la sécurité, du bruit et de l’humidité ; aucun débit n’est garanti.",
+      "sourceIds": [
+        "passif",
+        "tropical"
+      ],
+      "status": "principe_general_a_etudier",
+      "consultedAt": "2026-10-27"
+    },
+    {
+      "id": "nuit",
+      "title": "Évacuer la chaleur quand l’extérieur le permet",
+      "advice": "Envisager une aération lorsque l’air extérieur est plus favorable que l’intérieur.",
+      "limitation": "Ne pas appliquer une stratégie nocturne automatiquement à tous les climats ; vérifier moustiques, bruit et sécurité.",
+      "sourceIds": [
+        "passif",
+        "tropical"
+      ],
+      "status": "principe_general_a_etudier",
+      "consultedAt": "2026-10-27"
+    },
+    {
+      "id": "toit",
+      "title": "Traiter la toiture comme un ensemble",
+      "advice": "Comparer protection solaire, isolation, ventilation sous couverture et gestion de la condensation.",
+      "limitation": "L’assemblage et les matériaux sont à faire étudier ; aucune épaisseur universelle.",
+      "sourceIds": [
+        "toiture",
+        "tropical"
+      ],
+      "status": "principe_general_a_etudier",
+      "consultedAt": "2026-10-27"
+    },
+    {
+      "id": "orientation",
+      "title": "Étudier les expositions",
+      "advice": "Placer les usages et ouvertures après étude du soleil, des vents et du voisinage.",
+      "limitation": "Aucune règle « toutes les pièces au sud » n’est appliquée à tous les pays.",
+      "sourceIds": [
+        "passif"
+      ],
+      "status": "principe_general_a_etudier",
+      "consultedAt": "2026-10-27"
+    },
+    {
+      "id": "eau",
+      "title": "Préparer la gestion de l’eau",
+      "advice": "Repérer ruissellements, points bas et ouvrages enterrés avant conception détaillée.",
+      "limitation": "Le risque d’inondation et le drainage nécessitent des informations de parcelle et une étude locale.",
+      "sourceIds": [
+        "humidite",
+        "sols_sensibles"
+      ],
+      "status": "principe_general_a_etudier",
+      "consultedAt": "2026-10-27"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Avant-projet",
+      "definition": "Étude pour explorer et discuter une intention. Il ne remplace pas les plans d’exécution.",
+      "status": "definition_pedagogique"
+    },
+    {
+      "term": "Maître d’ouvrage",
+      "definition": "La personne ou l’organisation pour laquelle le projet est réalisé.",
+      "status": "definition_pedagogique"
+    },
+    {
+      "term": "Maître d’œuvre",
+      "definition": "Le professionnel chargé des missions de conception ou de suivi définies dans son contrat.",
+      "status": "definition_pedagogique"
+    },
+    {
+      "term": "Géotechnicien",
+      "definition": "Professionnel qui étudie le sol et les conditions géotechniques du projet.",
+      "status": "definition_pedagogique"
+    },
+    {
+      "term": "Implantation",
+      "definition": "Report sur le terrain de la position et des repères du projet.",
+      "status": "definition_pedagogique"
+    },
+    {
+      "term": "Fondations",
+      "definition": "Ouvrages qui transmettent les charges du bâtiment au sol, à concevoir par un professionnel.",
+      "status": "definition_pedagogique"
+    },
+    {
+      "term": "Soubassement",
+      "definition": "Partie basse d’une construction entre fondations et parties supérieures selon le système retenu.",
+      "status": "definition_pedagogique"
+    },
+    {
+      "term": "Dallage",
+      "definition": "Ouvrage de sol dont la conception dépend notamment de son support et de son usage.",
+      "status": "definition_pedagogique"
+    },
+    {
+      "term": "Chaînage",
+      "definition": "Élément de liaison structurelle dont la disposition appartient à l’étude du bâtiment.",
+      "status": "definition_pedagogique"
+    },
+    {
+      "term": "Étanchéité",
+      "definition": "Dispositions destinées à empêcher une pénétration d’eau dans les conditions prévues.",
+      "status": "definition_pedagogique"
+    },
+    {
+      "term": "Drainage",
+      "definition": "Dispositif de collecte ou d’évacuation de l’eau, à concevoir selon le terrain.",
+      "status": "definition_pedagogique"
+    },
+    {
+      "term": "Ventilation traversante",
+      "definition": "Circulation de l’air entre des ouvertures situées sur des façades distinctes.",
+      "status": "definition_pedagogique"
+    },
+    {
+      "term": "Pont thermique",
+      "definition": "Zone où l’isolation thermique présente une faiblesse ou une discontinuité.",
+      "status": "definition_pedagogique"
+    },
+    {
+      "term": "Réserve",
+      "definition": "Défaut ou point restant consigné par écrit lors de l’examen des travaux ; portée juridique à vérifier localement.",
+      "status": "definition_pedagogique"
+    },
+    {
+      "term": "Réception",
+      "definition": "Examen formalisé de l’ouvrage livré, avec conséquences définies par le contrat et le droit local.",
+      "status": "definition_pedagogique"
+    },
+    {
+      "term": "Plan d’exécution",
+      "definition": "Document technique détaillé établi par les professionnels pour réaliser les travaux. Le site ne le fournit pas.",
+      "status": "definition_pedagogique"
+    }
+  ],
+  "receptionChecklist": [
+    {
+      "id": "reception-1",
+      "label": "Préparer les plans, devis, avenants et documents du projet.",
+      "sourceIds": [
+        "reception",
+        "garanties"
+      ],
+      "checked": false
+    },
+    {
+      "id": "reception-2",
+      "label": "Faire la visite avec un professionnel indépendant si nécessaire.",
+      "sourceIds": [
+        "reception",
+        "garanties"
+      ],
+      "checked": false
+    },
+    {
+      "id": "reception-3",
+      "label": "Identifier chaque défaut par pièce et emplacement, avec photo et date.",
+      "sourceIds": [
+        "reception",
+        "garanties"
+      ],
+      "checked": false
+    },
+    {
+      "id": "reception-4",
+      "label": "Essayer portes, fenêtres et volets sans démonter d’éléments dangereux.",
+      "sourceIds": [
+        "reception",
+        "garanties"
+      ],
+      "checked": false
+    },
+    {
+      "id": "reception-5",
+      "label": "Faire démontrer eau, évacuations et équipements par les entreprises.",
+      "sourceIds": [
+        "reception",
+        "garanties"
+      ],
+      "checked": false
+    },
+    {
+      "id": "reception-6",
+      "label": "Demander les comptes rendus d’essais et de contrôles applicables localement.",
+      "sourceIds": [
+        "reception",
+        "garanties"
+      ],
+      "checked": false
+    },
+    {
+      "id": "reception-7",
+      "label": "Relever les traces d’humidité, fissures et finitions à examiner.",
+      "sourceIds": [
+        "reception",
+        "garanties"
+      ],
+      "checked": false
+    },
+    {
+      "id": "reception-8",
+      "label": "Récupérer notices, références produits, plans des réseaux et consignes d’entretien.",
+      "sourceIds": [
+        "reception",
+        "garanties"
+      ],
+      "checked": false
+    },
+    {
+      "id": "reception-9",
+      "label": "Consigner responsable et échéance convenue pour chaque point à corriger.",
+      "sourceIds": [
+        "reception",
+        "garanties"
+      ],
+      "checked": false
+    },
+    {
+      "id": "reception-10",
+      "label": "Lire le procès-verbal et les modalités contractuelles avant signature et paiement.",
+      "sourceIds": [
+        "reception",
+        "garanties"
+      ],
+      "checked": false
+    },
+    {
+      "id": "reception-11",
+      "label": "Faire vérifier les règles de réserves, garanties et retenues par un professionnel du pays.",
+      "sourceIds": [
+        "reception",
+        "garanties"
+      ],
+      "checked": false
+    },
+    {
+      "id": "reception-12",
+      "label": "Conserver une copie datée de tous les documents.",
+      "sourceIds": [
+        "reception",
+        "garanties"
+      ],
+      "checked": false
+    }
+  ],
+  "artisanQuestions": [
+    "Que comprend exactement votre prix, et quelles exclusions restent à ma charge ?",
+    "Qui est responsable de chaque étude et contrôle ?",
+    "Quels travaux doivent être vérifiés avant d’être cachés ?",
+    "Comment une modification de prix ou de matériaux sera-t-elle approuvée par écrit ?",
+    "Quel document justifie chaque appel de paiement ?",
+    "Quelles assurances et qualifications sont exigées dans le pays, et comment les vérifier ?",
+    "Quelles notices, preuves d’essais et consignes d’entretien seront remises ?"
+  ],
+  "scamWarnings": [
+    {
+      "title": "Pression pour payer immédiatement",
+      "advice": "Demander le contrat, l’identité vérifiable de l’entreprise et un temps de lecture. La pression seule ne prouve pas une fraude.",
+      "level": "Attention"
+    },
+    {
+      "title": "Changement de coordonnées bancaires",
+      "advice": "Vérifier tout changement par un moyen de contact déjà connu avant paiement.",
+      "level": "Attention"
+    },
+    {
+      "title": "Matériaux remplacés sans accord écrit",
+      "advice": "Demander les références, les différences techniques et un avenant avant accord.",
+      "level": "Attention"
+    },
+    {
+      "title": "Promesse de conformité sans étude",
+      "advice": "Faire préciser qui engage sa responsabilité, avec quels documents et dans quel périmètre.",
+      "level": "Risque sérieux"
+    }
+  ],
+  "climateData": {
+    "status": "aucun_jeu_de_donnees_locales_integre",
+    "countryMapping": null,
+    "temperature": null,
+    "rainfall": null,
+    "wind": null,
+    "floodRisk": null,
+    "seismicRisk": null,
+    "termiteRisk": null,
+    "notice": "Les risques de parcelle et données climatiques nécessitent des sources locales datées ; aucun risque déduit d’un seul nom de ville."
+  }
+}

@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-27",
+  "status": "registre_de_collecte_non_valide",
+  "notice": "Aucune recommandation climatique, structurelle ou disponibilité locale validée. À vérifier avec un professionnel local.",
+  "recordContract": {
+    "required": [
+      "id",
+      "region",
+      "claim",
+      "sourceUrl",
+      "sourcePublishedAt",
+      "consultedAt",
+      "reviewer",
+      "status"
+    ],
+    "publicationRule": "Ne publier une recommandation locale que si source et périmètre sont documentés et revue tracée.",
+    "unknownValues": null
+  },
+  "climateFamilies": [
+    {
+      "id": "chaud_humide",
+      "countryMapping": null,
+      "numericData": null,
+      "status": "a_documenter"
+    },
+    {
+      "id": "chaud_sec",
+      "countryMapping": null,
+      "numericData": null,
+      "status": "a_documenter"
+    },
+    {
+      "id": "tempere",
+      "countryMapping": null,
+      "numericData": null,
+      "status": "a_documenter"
+    },
+    {
+      "id": "froid",
+      "countryMapping": null,
+      "numericData": null,
+      "status": "a_documenter"
+    }
+  ],
+  "locationDossiers": [
+    {
+      "country": "Gabon",
+      "municipalRules": null,
+      "climateDataset": null,
+      "prices": null,
+      "status": "a_documenter"
+    },
+    {
+      "country": "France",
+      "municipalRules": null,
+      "climateDataset": null,
+      "prices": null,
+      "status": "a_documenter"
+    }
+  ],
+  "styles": [
+    {
+      "id": "traditionnel_local",
+      "type": "intention_esthetique",
+      "suitability": null
+    },
+    {
+      "id": "contemporain",
+      "type": "intention_esthetique",
+      "suitability": null
+    },
+    {
+      "id": "tropical",
+      "type": "intention_esthetique",
+      "suitability": null
+    },
+    {
+      "id": "moderne",
+      "type": "intention_esthetique",
+      "suitability": null
+    }
+  ],
+  "materialFamilies": [
+    {
+      "id": "structure",
+      "recommendation": null,
+      "economicAlternative": null,
+      "premiumAlternative": null,
+      "localAvailability": null,
+      "price": null,
+      "sourceUrl": null,
+      "sourcePublishedAt": null,
+      "consultedAt": null,
+      "reviewer": null,
+      "status": "brouillon"
+    },
+    {
+      "id": "murs",
+      "recommendation": null,
+      "economicAlternative": null,
+      "premiumAlternative": null,
+      "localAvailability": null,
+      "price": null,
+      "sourceUrl": null,
+      "sourcePublishedAt": null,
+      "consultedAt": null,
+      "reviewer": null,
+      "status": "brouillon"
+    },
+    {
+      "id": "dalles",
+      "recommendation": null,
+      "economicAlternative": null,
+      "premiumAlternative": null,
+      "localAvailability": null,
+      "price": null,
+      "sourceUrl": null,
+      "sourcePublishedAt": null,
+      "consultedAt": null,
+      "reviewer": null,
+      "status": "brouillon"
+    },
+    {
+      "id": "toiture",
+      "recommendation": null,
+      "economicAlternative": null,
+      "premiumAlternative": null,
+      "localAvailability": null,
+      "price": null,
+      "sourceUrl": null,
+      "sourcePublishedAt": null,
+      "consultedAt": null,
+      "reviewer": null,
+      "status": "brouillon"
+    },
+    {
+      "id": "isolation",
+      "recommendation": null,
+      "economicAlternative": null,
+      "premiumAlternative": null,
+      "localAvailability": null,
+      "price": null,
+      "sourceUrl": null,
+      "sourcePublishedAt": null,
+      "consultedAt": null,
+      "reviewer": null,
+      "status": "brouillon"
+    },
+    {
+      "id": "menuiseries",
+      "recommendation": null,
+      "economicAlternative": null,
+      "premiumAlternative": null,
+      "localAvailability": null,
+      "price": null,
+      "sourceUrl": null,
+      "sourcePublishedAt": null,
+      "consultedAt": null,
+      "reviewer": null,
+      "status": "brouillon"
+    },
+    {
+      "id": "sols",
+      "recommendation": null,
+      "economicAlternative": null,
+      "premiumAlternative": null,
+      "localAvailability": null,
+      "price": null,
+      "sourceUrl": null,
+      "sourcePublishedAt": null,
+      "consultedAt": null,
+      "reviewer": null,
+      "status": "brouillon"
+    },
+    {
+      "id": "peintures",
+      "recommendation": null,
+      "economicAlternative": null,
+      "premiumAlternative": null,
+      "localAvailability": null,
+      "price": null,
+      "sourceUrl": null,
+      "sourcePublishedAt": null,
+      "consultedAt": null,
+      "reviewer": null,
+      "status": "brouillon"
+    },
+    {
+      "id": "etancheite",
+      "recommendation": null,
+      "economicAlternative": null,
+      "premiumAlternative": null,
+      "localAvailability": null,
+      "price": null,
+      "sourceUrl": null,
+      "sourcePublishedAt": null,
+      "consultedAt": null,
+      "reviewer": null,
+      "status": "brouillon"
+    },
+    {
+      "id": "drainage",
+      "recommendation": null,
+      "economicAlternative": null,
+      "premiumAlternative": null,
+      "localAvailability": null,
+      "price": null,
+      "sourceUrl": null,
+      "sourcePublishedAt": null,
+      "consultedAt": null,
+      "reviewer": null,
+      "status": "brouillon"
+    }
+  ],
+  "materialEvaluationCriteria": [
+    "confort_thermique",
+    "ventilation",
+    "longevite",
+    "entretien",
+    "humidite",
+    "termites",
+    "pluie",
+    "chaleur",
+    "corrosion",
+    "cout_relatif",
+    "disponibilite_locale",
+    "risque_principal"
+  ],
+  "guideStages": [
+    "etude_terrain_sol",
+    "bornage_implantation",
+    "terrassement",
+    "fondations",
+    "sous_sol_soubassement_dallage",
+    "drainage_etancheite",
+    "murs_chainages",
+    "planchers_escaliers",
+    "charpente_toiture",
+    "menuiseries",
+    "electricite",
+    "plomberie_assainissement",
+    "enduits_cloisons_plafonds",
+    "sols_carrelage",
+    "peinture",
+    "finitions_nettoyage_reception"
+  ],
+  "guideStageFields": [
+    "quoi",
+    "pourquoi",
+    "intervenants",
+    "duree_indicative_sourcee",
+    "materiaux",
+    "erreurs_frequentes",
+    "verifications_avant_paiement",
+    "questions_artisans",
+    "schema",
+    "glossaire"
+  ],
+  "climateSourceCandidate": {
+    "url": "https://climateknowledgeportal.worldbank.org/",
+    "consultationAttempt": "2026-10-27",
+    "result": "403 - aucune donnée intégrée"
+  }
+}

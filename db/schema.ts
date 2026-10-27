@@ -1,0 +1,11 @@
+import { sqliteTable, text, integer } from 'drizzle-orm/sqlite-core';
+export const users=sqliteTable('users',{id:text('id').primaryKey(),email:text('email').notNull(),name:text('name').notNull(),role:text('role').notNull().default('client'),created:text('created').notNull()});
+export const projects=sqliteTable('projects',{id:text('id').primaryKey(),owner:text('owner').notNull(),name:text('name').notNull(),data:text('data').notNull(),revision:integer('revision').notNull().default(1),created:text('created').notNull(),updated:text('updated').notNull(),deleted:integer('deleted').notNull().default(0)});
+export const versions=sqliteTable('versions',{id:text('id').primaryKey(),project:text('project').notNull(),revision:integer('revision').notNull(),data:text('data').notNull(),created:text('created').notNull()});
+export const catalog=sqliteTable('catalog',{id:text('id').primaryKey(),data:text('data').notNull(),updated:text('updated').notNull()});
+export const settings=sqliteTable('settings',{key:text('key').primaryKey(),value:text('value').notNull()});
+export const audit=sqliteTable('audit',{id:text('id').primaryKey(),actor:text('actor').notNull(),action:text('action').notNull(),target:text('target').notNull(),created:text('created').notNull()});
+export const shares=sqliteTable('shares',{id:text('id').primaryKey(),project:text('project').notNull(),data:text('data').notNull(),expires:text('expires').notNull(),revoked:integer('revoked').notNull().default(0)});
+export const reviews=sqliteTable('reviews',{id:text('id').primaryKey(),project:text('project').notNull(),author:text('author').notNull(),authorName:text('author_name').notNull(),revision:integer('revision').notNull(),message:text('message').notNull(),created:text('created').notNull()});
+export const usage=sqliteTable('usage',{key:text('key').primaryKey(),tokens:integer('tokens').notNull().default(0)});
+export const memberships=sqliteTable('memberships',{id:text('id').primaryKey(),project:text('project').notNull(),user:text('user').notNull(),created:text('created').notNull()});

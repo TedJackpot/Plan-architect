@@ -1,0 +1,553 @@
+{
+  "date": "2026-10-27T22:37:35.949Z",
+  "engine": "1.0.0",
+  "count": 50,
+  "passed": 50,
+  "scope": "Contrôles géométriques uniquement, aucune conformité structurelle/réglementaire",
+  "results": [
+    {
+      "name": "rectangle-1",
+      "expected": "valid",
+      "observed": "valid",
+      "passed": true,
+      "area": 117.44399896516038,
+      "rooms": 8,
+      "errors": [],
+      "milliseconds": 15.295
+    },
+    {
+      "name": "rectangle-2",
+      "expected": "valid",
+      "observed": "valid",
+      "passed": true,
+      "area": 117.44399896516038,
+      "rooms": 8,
+      "errors": [],
+      "milliseconds": 5.663
+    },
+    {
+      "name": "rectangle-3",
+      "expected": "valid",
+      "observed": "valid",
+      "passed": true,
+      "area": 117.44399896516038,
+      "rooms": 8,
+      "errors": [],
+      "milliseconds": 3.724
+    },
+    {
+      "name": "rectangle-4",
+      "expected": "valid",
+      "observed": "valid",
+      "passed": true,
+      "area": 117.44399896516038,
+      "rooms": 8,
+      "errors": [],
+      "milliseconds": 2.662
+    },
+    {
+      "name": "rectangle-5",
+      "expected": "valid",
+      "observed": "valid",
+      "passed": true,
+      "area": 117.44399896516038,
+      "rooms": 8,
+      "errors": [],
+      "milliseconds": 2.234
+    },
+    {
+      "name": "rectangle-6",
+      "expected": "valid",
+      "observed": "valid",
+      "passed": true,
+      "area": 117.44399896516038,
+      "rooms": 8,
+      "errors": [],
+      "milliseconds": 2.596
+    },
+    {
+      "name": "rectangle-7",
+      "expected": "valid",
+      "observed": "valid",
+      "passed": true,
+      "area": 117.44399896516038,
+      "rooms": 8,
+      "errors": [],
+      "milliseconds": 3.922
+    },
+    {
+      "name": "rectangle-8",
+      "expected": "valid",
+      "observed": "valid",
+      "passed": true,
+      "area": 117.44399896516038,
+      "rooms": 8,
+      "errors": [],
+      "milliseconds": 4.47
+    },
+    {
+      "name": "rectangle-9",
+      "expected": "valid",
+      "observed": "valid",
+      "passed": true,
+      "area": 117.44399896516038,
+      "rooms": 8,
+      "errors": [],
+      "milliseconds": 3.35
+    },
+    {
+      "name": "rectangle-10",
+      "expected": "valid",
+      "observed": "valid",
+      "passed": true,
+      "area": 117.44399896516038,
+      "rooms": 8,
+      "errors": [],
+      "milliseconds": 4.003
+    },
+    {
+      "name": "etroit-1",
+      "expected": "invalid",
+      "observed": "invalid",
+      "passed": true,
+      "area": 0,
+      "rooms": 0,
+      "errors": [
+        "Aucun schéma rectangulaire compatible trouvé pour ce programme. Réduisez les besoins ou le retrait de conception ; un terrain complexe peut nécessiter une implantation sur mesure."
+      ],
+      "milliseconds": 0.109
+    },
+    {
+      "name": "etroit-2",
+      "expected": "invalid",
+      "observed": "invalid",
+      "passed": true,
+      "area": 0,
+      "rooms": 0,
+      "errors": [
+        "Aucun schéma rectangulaire compatible trouvé pour ce programme. Réduisez les besoins ou le retrait de conception ; un terrain complexe peut nécessiter une implantation sur mesure."
+      ],
+      "milliseconds": 0.047
+    },
+    {
+      "name": "etroit-3",
+      "expected": "invalid",
+      "observed": "invalid",
+      "passed": true,
+      "area": 0,
+      "rooms": 0,
+      "errors": [
+        "Aucun schéma rectangulaire compatible trouvé pour ce programme. Réduisez les besoins ou le retrait de conception ; un terrain complexe peut nécessiter une implantation sur mesure."
+      ],
+      "milliseconds": 0.012
+    },
+    {
+      "name": "etroit-4",
+      "expected": "invalid",
+      "observed": "invalid",
+      "passed": true,
+      "area": 0,
+      "rooms": 0,
+      "errors": [
+        "Aucun schéma rectangulaire compatible trouvé pour ce programme. Réduisez les besoins ou le retrait de conception ; un terrain complexe peut nécessiter une implantation sur mesure."
+      ],
+      "milliseconds": 0.006
+    },
+    {
+      "name": "etroit-5",
+      "expected": "invalid",
+      "observed": "invalid",
+      "passed": true,
+      "area": 0,
+      "rooms": 0,
+      "errors": [
+        "Aucun schéma rectangulaire compatible trouvé pour ce programme. Réduisez les besoins ou le retrait de conception ; un terrain complexe peut nécessiter une implantation sur mesure."
+      ],
+      "milliseconds": 0.006
+    },
+    {
+      "name": "etroit-6",
+      "expected": "invalid",
+      "observed": "invalid",
+      "passed": true,
+      "area": 0,
+      "rooms": 0,
+      "errors": [
+        "Aucun schéma rectangulaire compatible trouvé pour ce programme. Réduisez les besoins ou le retrait de conception ; un terrain complexe peut nécessiter une implantation sur mesure."
+      ],
+      "milliseconds": 0.006
+    },
+    {
+      "name": "etroit-7",
+      "expected": "invalid",
+      "observed": "invalid",
+      "passed": true,
+      "area": 0,
+      "rooms": 0,
+      "errors": [
+        "Aucun schéma rectangulaire compatible trouvé pour ce programme. Réduisez les besoins ou le retrait de conception ; un terrain complexe peut nécessiter une implantation sur mesure."
+      ],
+      "milliseconds": 0.005
+    },
+    {
+      "name": "etroit-8",
+      "expected": "invalid",
+      "observed": "invalid",
+      "passed": true,
+      "area": 0,
+      "rooms": 0,
+      "errors": [
+        "Aucun schéma rectangulaire compatible trouvé pour ce programme. Réduisez les besoins ou le retrait de conception ; un terrain complexe peut nécessiter une implantation sur mesure."
+      ],
+      "milliseconds": 0.005
+    },
+    {
+      "name": "etroit-9",
+      "expected": "invalid",
+      "observed": "invalid",
+      "passed": true,
+      "area": 0,
+      "rooms": 0,
+      "errors": [
+        "Aucun schéma rectangulaire compatible trouvé pour ce programme. Réduisez les besoins ou le retrait de conception ; un terrain complexe peut nécessiter une implantation sur mesure."
+      ],
+      "milliseconds": 0.005
+    },
+    {
+      "name": "etroit-10",
+      "expected": "invalid",
+      "observed": "invalid",
+      "passed": true,
+      "area": 0,
+      "rooms": 0,
+      "errors": [
+        "Aucun schéma rectangulaire compatible trouvé pour ce programme. Réduisez les besoins ou le retrait de conception ; un terrain complexe peut nécessiter une implantation sur mesure."
+      ],
+      "milliseconds": 0.005
+    },
+    {
+      "name": "irregulier-1",
+      "expected": "valid",
+      "observed": "valid",
+      "passed": true,
+      "area": 117.44399896516038,
+      "rooms": 8,
+      "errors": [],
+      "milliseconds": 2.584
+    },
+    {
+      "name": "irregulier-2",
+      "expected": "valid",
+      "observed": "valid",
+      "passed": true,
+      "area": 117.44399896516038,
+      "rooms": 8,
+      "errors": [],
+      "milliseconds": 2.199
+    },
+    {
+      "name": "irregulier-3",
+      "expected": "valid",
+      "observed": "valid",
+      "passed": true,
+      "area": 117.44399896516038,
+      "rooms": 8,
+      "errors": [],
+      "milliseconds": 4.073
+    },
+    {
+      "name": "irregulier-4",
+      "expected": "valid",
+      "observed": "valid",
+      "passed": true,
+      "area": 117.44399896516038,
+      "rooms": 8,
+      "errors": [],
+      "milliseconds": 2.987
+    },
+    {
+      "name": "irregulier-5",
+      "expected": "valid",
+      "observed": "valid",
+      "passed": true,
+      "area": 117.44399896516038,
+      "rooms": 8,
+      "errors": [],
+      "milliseconds": 2.129
+    },
+    {
+      "name": "irregulier-6",
+      "expected": "valid",
+      "observed": "valid",
+      "passed": true,
+      "area": 117.44399896516038,
+      "rooms": 8,
+      "errors": [],
+      "milliseconds": 1.785
+    },
+    {
+      "name": "irregulier-7",
+      "expected": "valid",
+      "observed": "valid",
+      "passed": true,
+      "area": 117.44399896516038,
+      "rooms": 8,
+      "errors": [],
+      "milliseconds": 1.972
+    },
+    {
+      "name": "irregulier-8",
+      "expected": "valid",
+      "observed": "valid",
+      "passed": true,
+      "area": 117.44399896516038,
+      "rooms": 8,
+      "errors": [],
+      "milliseconds": 2.719
+    },
+    {
+      "name": "irregulier-9",
+      "expected": "valid",
+      "observed": "valid",
+      "passed": true,
+      "area": 117.44399896516038,
+      "rooms": 8,
+      "errors": [],
+      "milliseconds": 2.681
+    },
+    {
+      "name": "irregulier-10",
+      "expected": "valid",
+      "observed": "valid",
+      "passed": true,
+      "area": 117.44399896516038,
+      "rooms": 8,
+      "errors": [],
+      "milliseconds": 3.028
+    },
+    {
+      "name": "pente-1",
+      "expected": "valid",
+      "observed": "valid",
+      "passed": true,
+      "area": 117.44399896516038,
+      "rooms": 8,
+      "errors": [],
+      "milliseconds": 1.638
+    },
+    {
+      "name": "pente-2",
+      "expected": "valid",
+      "observed": "valid",
+      "passed": true,
+      "area": 117.44399896516038,
+      "rooms": 8,
+      "errors": [],
+      "milliseconds": 3.149
+    },
+    {
+      "name": "pente-3",
+      "expected": "valid",
+      "observed": "valid",
+      "passed": true,
+      "area": 117.44399896516038,
+      "rooms": 8,
+      "errors": [],
+      "milliseconds": 4.644
+    },
+    {
+      "name": "pente-4",
+      "expected": "valid",
+      "observed": "valid",
+      "passed": true,
+      "area": 117.44399896516038,
+      "rooms": 8,
+      "errors": [],
+      "milliseconds": 3.599
+    },
+    {
+      "name": "pente-5",
+      "expected": "valid",
+      "observed": "valid",
+      "passed": true,
+      "area": 117.44399896516038,
+      "rooms": 8,
+      "errors": [],
+      "milliseconds": 2.905
+    },
+    {
+      "name": "pente-6",
+      "expected": "valid",
+      "observed": "valid",
+      "passed": true,
+      "area": 117.44399896516038,
+      "rooms": 8,
+      "errors": [],
+      "milliseconds": 1.759
+    },
+    {
+      "name": "pente-7",
+      "expected": "valid",
+      "observed": "valid",
+      "passed": true,
+      "area": 117.44399896516038,
+      "rooms": 8,
+      "errors": [],
+      "milliseconds": 2.257
+    },
+    {
+      "name": "pente-8",
+      "expected": "valid",
+      "observed": "valid",
+      "passed": true,
+      "area": 117.44399896516038,
+      "rooms": 8,
+      "errors": [],
+      "milliseconds": 2.198
+    },
+    {
+      "name": "pente-9",
+      "expected": "valid",
+      "observed": "valid",
+      "passed": true,
+      "area": 117.44399896516038,
+      "rooms": 8,
+      "errors": [],
+      "milliseconds": 2.322
+    },
+    {
+      "name": "pente-10",
+      "expected": "valid",
+      "observed": "valid",
+      "passed": true,
+      "area": 117.44399896516038,
+      "rooms": 8,
+      "errors": [],
+      "milliseconds": 2.471
+    },
+    {
+      "name": "invalide-ou-insoluble-1",
+      "expected": "invalid",
+      "observed": "invalid",
+      "passed": true,
+      "area": 0,
+      "rooms": 0,
+      "errors": [
+        "Surface du terrain nulle ou inférieure à 1 m².",
+        "Deux sommets du terrain sont confondus.",
+        "Le contour du terrain se croise."
+      ],
+      "milliseconds": 0.072
+    },
+    {
+      "name": "invalide-ou-insoluble-2",
+      "expected": "invalid",
+      "observed": "invalid",
+      "passed": true,
+      "area": 0,
+      "rooms": 0,
+      "errors": [
+        "Surface du terrain nulle ou inférieure à 1 m².",
+        "Le contour du terrain se croise."
+      ],
+      "milliseconds": 0.018
+    },
+    {
+      "name": "invalide-ou-insoluble-3",
+      "expected": "invalid",
+      "observed": "invalid",
+      "passed": true,
+      "area": 0,
+      "rooms": 0,
+      "errors": [
+        "Surface du terrain nulle ou inférieure à 1 m².",
+        "Deux sommets du terrain sont confondus."
+      ],
+      "milliseconds": 0.003
+    },
+    {
+      "name": "invalide-ou-insoluble-4",
+      "expected": "invalid",
+      "observed": "invalid",
+      "passed": true,
+      "area": 0,
+      "rooms": 0,
+      "errors": [
+        "Terrain invalide : entre 3 et 100 sommets métriques finis."
+      ],
+      "milliseconds": 0.004
+    },
+    {
+      "name": "invalide-ou-insoluble-5",
+      "expected": "invalid",
+      "observed": "invalid",
+      "passed": true,
+      "area": 0,
+      "rooms": 0,
+      "errors": [
+        "Surface du terrain nulle ou inférieure à 1 m²."
+      ],
+      "milliseconds": 0.003
+    },
+    {
+      "name": "invalide-ou-insoluble-6",
+      "expected": "invalid",
+      "observed": "invalid",
+      "passed": true,
+      "area": 0,
+      "rooms": 0,
+      "errors": [
+        "Aucun schéma rectangulaire compatible trouvé pour ce programme. Réduisez les besoins ou le retrait de conception ; un terrain complexe peut nécessiter une implantation sur mesure."
+      ],
+      "milliseconds": 0.431
+    },
+    {
+      "name": "invalide-ou-insoluble-7",
+      "expected": "invalid",
+      "observed": "invalid",
+      "passed": true,
+      "area": 0,
+      "rooms": 0,
+      "errors": [
+        "Aucun schéma rectangulaire compatible trouvé pour ce programme. Réduisez les besoins ou le retrait de conception ; un terrain complexe peut nécessiter une implantation sur mesure."
+      ],
+      "milliseconds": 0.62
+    },
+    {
+      "name": "invalide-ou-insoluble-8",
+      "expected": "invalid",
+      "observed": "invalid",
+      "passed": true,
+      "area": 0,
+      "rooms": 0,
+      "errors": [
+        "Aucun schéma rectangulaire compatible trouvé pour ce programme. Réduisez les besoins ou le retrait de conception ; un terrain complexe peut nécessiter une implantation sur mesure."
+      ],
+      "milliseconds": 0.418
+    },
+    {
+      "name": "invalide-ou-insoluble-9",
+      "expected": "invalid",
+      "observed": "invalid",
+      "passed": true,
+      "area": 0,
+      "rooms": 0,
+      "errors": [
+        "Aucun schéma rectangulaire compatible trouvé pour ce programme. Réduisez les besoins ou le retrait de conception ; un terrain complexe peut nécessiter une implantation sur mesure."
+      ],
+      "milliseconds": 0.376
+    },
+    {
+      "name": "invalide-ou-insoluble-10",
+      "expected": "invalid",
+      "observed": "invalid",
+      "passed": true,
+      "area": 0,
+      "rooms": 0,
+      "errors": [
+        "Aucun schéma rectangulaire compatible trouvé pour ce programme. Réduisez les besoins ou le retrait de conception ; un terrain complexe peut nécessiter une implantation sur mesure."
+      ],
+      "milliseconds": 0.652
+    }
+  ]
+}
